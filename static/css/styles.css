@@ -1,13 +1,27 @@
-.site_title {
-  font-family: sans-serif;
-  font-weight: lighter;
+/* vim: set ts=2 sw=2 sts=2 et : */
+
+body {
+  margin: auto;
+  max-width: 50em;  
+  border: 1px solid; /* DEBUG */
 }
+
+.site_title {
+  font-family: monospace;
+  font-weight: lighter;
+  display: block;
+  color: #333333;
+}
+
 .site_title:before, .site_title:after {
-  color: #DDDDDD;
+  color: #BBBBBB;
+  position: relative;
 }
 .site_title:before {
   content: "<";
+  left: 0.4em;
 }
 .site_title:after {
   content: ">";
+  right: 0.4em;
 }

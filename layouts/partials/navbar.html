@@ -1,1 +1,8 @@
- TODO NAVBAR
+<nav>
+  {{ range .Site.Sections }}
+  <a href="{{.URL}}">{{.Title}}</a> | 
+    {{ range .Sections }}
+    ||<a href="{{.URL}}">{{.Title}}</a>||
+    {{end}}
+  {{ end }}
+</nav>
