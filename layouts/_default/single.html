@@ -1,3 +1,6 @@
-<html>
-    <h1> Single Page </h1>
-</html>
+{{ define "main" }}
+<article>
+  <h1> {{ .Title }} </h1>
+  <div>{{ .Content }}</div>
+</article>
+{{ end }}

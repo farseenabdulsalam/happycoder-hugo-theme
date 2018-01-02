@@ -1,0 +1,13 @@
+.site_title {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.site_title:before, .site_title:after {
+  color: #DDDDDD;
+}
+.site_title:before {
+  content: "<";
+}
+.site_title:after {
+  content: ">";
+}
