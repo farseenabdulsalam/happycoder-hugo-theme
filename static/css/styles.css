@@ -6,22 +6,51 @@ body {
   border: 1px solid; /* DEBUG */
 }
 
-.site_title {
+/* ------ header ------ */
+
+header h1 {
   font-family: monospace;
   font-weight: lighter;
   display: block;
   color: #333333;
 }
-
-.site_title:before, .site_title:after {
+header h1:before, header h1:after {
   color: #BBBBBB;
   position: relative;
 }
-.site_title:before {
+header h1:before {
   content: "<";
   left: 0.4em;
 }
-.site_title:after {
+header h1:after {
   content: ">";
   right: 0.4em;
+}
+
+/* ------ navigation ------ */
+
+nav {
+  border-bottom: 1px solid #BBBBBB;
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+nav div {
+  background-color: #F6F6F6;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+nav div a {
+  display: block;
+  color: #333333;
+  font-style: none;
+  text-decoration: none;
+}
+nav div:hover div {
+  display: block;
+  position: absolute;
+}
+
+nav div div {
+  display: none;
 }

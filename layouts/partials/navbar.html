@@ -1,8 +1,11 @@
 <nav>
   {{ range .Site.Sections }}
-  <a href="{{.URL}}">{{.Title}}</a> | 
-    {{ range .Sections }}
-    ||<a href="{{.URL}}">{{.Title}}</a>||
-    {{end}}
+    <div>
+      <a href="{{.URL}}">{{.Title}}</a>
+      <div>
+      {{range .Pages}}
+        <a href="{{.URL}}">{{.Title}}</a>
+      {{end}}
+      </div>
   {{ end }}
 </nav>
