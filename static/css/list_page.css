@@ -1,0 +1,33 @@
+/* vim: set ts=2 sw=2 sts=2 et : */
+
+.list-page-entry {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 1em 0em 1em 0em;
+  padding:0 1em 2em 1em;
+}
+
+.list-page-entry .title {
+  margin: 0.5em 0 0.3em 0;
+  color: #222;
+}
+
+.list-page-entry .link-to-article {
+  text-decoration: none;
+}
+
+.list-page-entry .link-to-article .title:hover {
+  color: #444;
+}
+
+.list-page-entry .summary {
+  margin: 0em;
+}
+
+.list-page-entry .date {
+  color: #999;
+  float: right;
+  position: relative;
+  top: -2.2em;
+}
+

@@ -1,8 +1,12 @@
 {{ define "main" }}
 {{ range .Pages }}
-<div>
-  <h1> {{ .Title }} </h1>
-  <a href="{{ .URL }}">go there</a>
-</div>
+<section class="list-page-entry">
+	<a href="{{.URL}}" class="link-to-article"><h2 class="title"> {{ .Title }} </h2></a>
+  <div class="date">{{ dateFormat "02 Jan 06" .Date.Local }}</div>
+  <p class="summary">{{ .Summary }}</p>
+  {{ range .Params.tags }}
+  {{ . }}
+  {{ end }}
+</section>
 {{ end }}
 {{ end }}

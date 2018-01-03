@@ -15,7 +15,15 @@ h1, h2, h3 {
 }
 
 body main {
-  padding: 1em;
+  padding-top: 2em;
+  min-height: 60vh;
+}
+
+a, a:visited {
+  color: #333;
+}
+a:hover {
+  color: #666;
 }
 
 /* ------ header ------ */
@@ -23,11 +31,12 @@ body main {
 header {
   padding-top: 1em;
   padding-bottom: 1em;
+  font-family: "Cutive Mono", monospace;
 }
 
 header h1 {
-  font-family: "Cutive Mono", monospace;
   font-weight: lighter;
+  font-family: "Cutive Mono", monospace;
   display: block;
   color: #333333;
 }
@@ -43,7 +52,13 @@ header h1:after {
   content: ">";
   right: 0.4em;
 }
-
+header .side-links {
+  float: right;
+  position: relative;
+  top: -3.9em;
+  border: none;
+  padding: 1em;
+}
 /* ------ navigation ------ */
 
 nav {
@@ -85,4 +100,14 @@ nav div:hover div {
 nav div div {
   display: none;
   background-color: inherit;
+}
+
+/* ----- footer ------ */
+
+footer {
+  color: #888;
+  font-size: 0.8em;
+  border-top: 1px solid #bbb;
+  padding: 1em;
+  text-align: right;
 }
