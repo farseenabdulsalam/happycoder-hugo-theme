@@ -33,21 +33,32 @@ nav {
   border-bottom: 1px solid #BBBBBB;
   font-family: monospace;
   font-size: 1.2em;
+  background-color: #F6F6F6;
 }
 
 nav div {
-  background-color: #F6F6F6;
-  padding: 0.5em 1em 0.5em 1em;
+  display: block;
+  max-width: 10em;
+  text-align: center;
 }
 
 nav div a {
   display: block;
+  padding: 0.5em 1em 0.5em 1em;
   color: #333333;
   font-style: none;
   text-decoration: none;
 }
+nav div:hover {
+  background-color: #666666;
+}
+nav div:hover a {
+  color: #ffffff;
+}
+
 nav div:hover div {
   display: block;
+  width: 100%;
   position: absolute;
 }
 
