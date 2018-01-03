@@ -1,15 +1,32 @@
 /* vim: set ts=2 sw=2 sts=2 et : */
 
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Merriweather|Open+Sans+Condensed:700');
+
 body {
   margin: auto;
-  max-width: 50em;  
-  border: 1px solid; /* DEBUG */
+  max-width: 45em;  
+  font-size: 2.5vmin;
+  font-family: Merriweather, serif;
+  /*border: 1px solid; /* DEBUG */
+}
+
+h1, h2, h3 {
+  font-family: "Open Sans Condensed";
+}
+
+body main {
+  padding: 1em;
 }
 
 /* ------ header ------ */
 
+header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 header h1 {
-  font-family: monospace;
+  font-family: "Cutive Mono", monospace;
   font-weight: lighter;
   display: block;
   color: #333333;
@@ -31,9 +48,7 @@ header h1:after {
 
 nav {
   border-bottom: 1px solid #BBBBBB;
-  font-family: monospace;
-  font-size: 1.2em;
-  background-color: #F6F6F6;
+  font-size: 1em;
 }
 
 nav div {
@@ -45,23 +60,29 @@ nav div {
 nav div a {
   display: block;
   padding: 0.5em 1em 0.5em 1em;
-  color: #333333;
+  color: #444;
   font-style: none;
   text-decoration: none;
 }
-nav div:hover {
-  background-color: #666666;
+
+nav div a:hover {
+  color:#222;
 }
-nav div:hover a {
-  color: #ffffff;
+
+nav div div a {
+  font-size: 0.8em;
 }
 
 nav div:hover div {
   display: block;
   width: 100%;
   position: absolute;
+  background-color: #fff;
+  border: solid 1px #bbb;
+  border-top-color: #ddd;
 }
 
 nav div div {
   display: none;
+  background-color: inherit;
 }
