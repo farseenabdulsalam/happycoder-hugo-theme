@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ range .Pages }}
+{{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
 <section class="list-page-entry">
 	<a href="{{.URL}}" class="link-to-article"><h2 class="title"> {{ .Title }} </h2></a>
   <div class="date">{{ dateFormat "02 Jan 06" .Date.Local }}</div>
