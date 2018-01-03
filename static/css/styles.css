@@ -1,17 +1,19 @@
 /* vim: set ts=2 sw=2 sts=2 et : */
 
-@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Merriweather|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Merriweather|Open+Sans:400|Open+Sans+Condensed:700');
 
 body {
   margin: auto;
-  max-width: 45em;  
-  font-size: 2.5vmin;
+  max-width: 48em;  
+  font-size: 2.3vmin;
   font-family: Merriweather, serif;
+  color: #222;
   /*border: 1px solid; /* DEBUG */
 }
 
 h1, h2, h3 {
   font-family: "Open Sans Condensed";
+  color: #444;
 }
 
 body main {
@@ -32,6 +34,10 @@ header {
   padding-top: 1em;
   padding-bottom: 1em;
   font-family: "Cutive Mono", monospace;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header h1 {
@@ -59,11 +65,16 @@ header .side-links {
   border: none;
   padding: 1em;
 }
+header .side-links a {
+  padding: 0.5em;
+}
 /* ------ navigation ------ */
 
 nav {
   border-bottom: 1px solid #BBBBBB;
   font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
 }
 
 nav div {
