@@ -5,10 +5,13 @@
 body {
   margin: auto;
   max-width: 48em;  
-  font-size: 2.3vmin;
   font-family: Merriweather, serif;
   color: #222;
   /*border: 1px solid; /* DEBUG */
+}
+
+article {
+  padding: 1em;
 }
 
 h1, h2, h3 {
@@ -18,7 +21,8 @@ h1, h2, h3 {
 
 body main {
   padding-top: 2em;
-  min-height: 60vh;
+  min-height: 65%;
+  min-height: 65vh;
 }
 
 a, a:visited {
