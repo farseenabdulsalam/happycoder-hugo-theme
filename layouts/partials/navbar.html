@@ -2,10 +2,5 @@
   {{ range .Site.Sections }}
     <div>
       <a href="{{.URL}}">{{.Title}}</a>
-      <div>
-      {{range .Pages}}
-        <a href="{{.URL}}">{{.Title}}</a>
-      {{end}}
-      </div>
   {{ end }}
 </nav>
